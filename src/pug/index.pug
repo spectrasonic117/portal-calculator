@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="icon" href="/public/assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png")
+		link(rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicons/favicon-16x16.png")
+		link(rel="apple-touch-icon" sizes="180x180" href="/public/assets/favicons/apple-touch-icon.png")
+		link(rel="manifest" href="/public/assets/favicons/site.webmanifest")
+		title Portal Calculator
+	body 
+		section
+			article.header 
+				h1 Portal Calculator
+				p Calculate the coords to link portals in Minecraft
+				p How to use it:
+				|if you are in the nether, put the nether coords below, and it will give you the coordinates in the overworld, and vice versa.
+			article.form__nether
+				form#nether
+					h2 Nether
+					div.textlabel
+						label(for="x-coord")
+						input#x-coord-nether(type="text" name="x" placeholder="X Nether")
+					div.textlabel
+						label(for="z-coord")
+						input#z-coord-nether(type="text" name="z" placeholder="Z Nether")
+					//- button.submit_nether#submit_nether(type="submit") Calculate
+			article.form__overworld
+				form#overworld
+					h2 Overworld
+					div.textlabel
+						label(for="x-coord")
+						input#x-coord-overworld(type="text" name="x" placeholder="X Overworld")
+					div.textlabel
+						label(for="z-coord")
+						input#z-coord-overworld(type="text" name="z" placeholder="Z Overworld")
+					//- button.submit_overworld#submit_overworld(type="submit") Calculate
+
+			footer
+				p <img class="icon-net" src="/public/assets/icons/code.svg" /> with <img class="icon-net" src="/public/assets/icons/heart.svg" /> by <a href="https://bit.ly/spectrasonic" target="_blank">Spectrasonic</a>
+
+		script(src="js/calculator.js")

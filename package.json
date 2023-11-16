@@ -1,0 +1,19 @@
+{
+	"name": "nether-portal-calculator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"bsass": "pnpx sass --watch src/sass:dist/css",
+		"bpug": "pug --watch src/pug --out dist",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"pug": "^3.0.2",
+		"pug-cli": "1.0.0-alpha6",
+		"sass": "^1.69.5"
+	}
+}

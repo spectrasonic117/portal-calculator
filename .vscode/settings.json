@@ -1,0 +1,4 @@
+{
+	"livePreview.defaultPreviewPath": "/dist/index.html",
+	"editor.inlineSuggest.showToolbar": "onHover"
+}
