@@ -6,6 +6,7 @@
 	"scripts": {
 		"bsass": "pnpx sass --watch src/sass:dist/css",
 		"bpug": "pug --watch src/pug --out dist",
+		"bts": "tsc src/ts/calculator.ts --outDir dist/js/",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -14,6 +15,7 @@
 	"dependencies": {
 		"pug": "^3.0.2",
 		"pug-cli": "1.0.0-alpha6",
-		"sass": "^1.69.5"
+		"sass": "^1.69.5",
+		"typescript": "^5.2.2"
 	}
 }
