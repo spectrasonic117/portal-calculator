@@ -6,7 +6,7 @@
 	"scripts": {
 		"bsass": "pnpx sass --watch src/sass:dist/css",
 		"bpug": "pug --watch src/pug --out dist",
-		"bts": "tsc src/ts/calculator.ts --outDir dist/js/",
+		"bts": "tsc --allowJs src/ts/calculator.ts --outDir dist/js/",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
